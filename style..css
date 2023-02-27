@@ -5,6 +5,8 @@ html{
  #moto{
   position: fixed;
   width: 100%;
+  z-index: 10000;
+  color: #fff;
  }
 .nav-item a {
   transition-property: background-color;
