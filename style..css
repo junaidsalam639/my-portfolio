@@ -7,6 +7,7 @@ html{
   width: 100%;
   z-index: 10000;
   color: #fff;
+  box-shadow: 0px 15px 10px -15px #111; 
  }
 .nav-item a {
   transition-property: background-color;
@@ -15,21 +16,34 @@ html{
 }
 .nav-link:hover,
 .nav-link.active {
-  background-color: #2f2f2f;
+  background-color: orangered;
   border-radius: 20px;
+  color: #fff;
+}
+
+.navbar-toggler-icon{
+  border: 0;
+  outline: 0;
+}
+
+.navbar-toggler:focus{
+  box-shadow: 0;
+  outline: 0;
+  border: 0;
 }
 
 /* ============navbarEnd=============== */
 /* =========Home============= */
 .container-fluid {
-  height: 600px;
-   background-image: url('https://images.unsplash.com/photo-1584949091598-c31daaaa4aa9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGRldmVsb3BlcnxlbnwwfHwwfHw%3D&w=1000&q=80');
+ height: 100vh;
+   background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29kaW5nfGVufDB8fDB8fHww&w=1000&q=80');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-attachment: fixed;
 }
 
 .text h1 {
@@ -47,6 +61,8 @@ html{
   transition-property: background-color;
   transition-property: color;
   transition: 2s;
+  border: 0;
+  outline: 0;
 }
 
 .text button:hover {
@@ -55,6 +71,9 @@ html{
 }
 
 /* ============HomeEnd=============== */
+.color{
+  background-color: #f5f6fa;
+}
 /* =======About============ */
 #demo p {
   font-weight: 500;
@@ -72,6 +91,10 @@ html{
   margin-left: 15px;
 }
 
+.images i{
+  cursor: pointer;
+}
+
 .imag {
   margin-left: 15px;
 }
@@ -83,6 +106,8 @@ html{
   transition-property: background-color;
   transition-property: color;
   transition: 2s;
+  border: 0;
+  outline: 0;
 }
 
 #demo button:hover {
@@ -148,6 +173,16 @@ html{
 }
 
 /* ===========EndAbout================ */
+.card-card img{
+  cursor: pointer;
+}
+
+.card-card img:hover{
+  filter: blur(1px);
+  filter: brightness(1.1);
+  filter: contrast(1.5);
+}
+
 /* ============service=============== */
 .section-head {
   margin-bottom: 60px;
