@@ -12,14 +12,17 @@ html{
 .nav-item a {
   transition-property: background-color;
   transition: 1s;
-  font-weight: 900;
+  font-weight: 700;
+  font-size: 20px;
+  color: #f5f6fa;
 }
 .nav-link:hover,
 .nav-link.active {
-  background-color: orangered;
+  background-color: #f5f6fa;
   border-radius: 20px;
-  color: #fff;
+  color: #4f4c4c;
 }
+
 
 .navbar-toggler-icon{
   border: 0;
@@ -35,23 +38,27 @@ html{
 /* ============navbarEnd=============== */
 /* =========Home============= */
 .container-fluid {
- height: 100vh;
-   background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29kaW5nfGVufDB8fDB8fHww&w=1000&q=80');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  background-image: url('https://images.unsplash.com/photo-1616004655123-818cbd4b3143?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29kaW5nJTIwd2FsbHBhcGVyfGVufDB8fDB8fHww&w=1000&q=80');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(1.1);
+  filter: contrast(1.5);
+  filter: blur(1.1);
 }
 
 .text h1 {
-  color: #e84118;
+  color: #f5f6fa;
 }
 
 .text h2 {
-  color: #e84118;
+  color: #f5f6fa;
 }
 
 .text button {
@@ -63,21 +70,24 @@ html{
   transition: 2s;
   border: 0;
   outline: 0;
+  color: #2f3640;
 }
 
 .text button:hover {
-  color: white;
-  background-color: #e84118;
+  color: #f5f6fa;
+  background-color: #2f2f2f;
 }
 
 /* ============HomeEnd=============== */
 .color{
-  background-color: #f5f6fa;
+  background-color: #2f3640;
 }
 /* =======About============ */
 #demo p {
   font-weight: 500;
   font-size: 20px;
+  color: #f5f6fa;
+  letter-spacing: 2px;
 }
 
 .images {
@@ -93,6 +103,7 @@ html{
 
 .images i{
   cursor: pointer;
+  color: #f5f6fa;
 }
 
 .imag {
@@ -111,7 +122,7 @@ html{
 }
 
 #demo button:hover {
-  background-color: #f91942;
+  background-color: #2f2f2f;
   color: white;
 }
 
@@ -119,28 +130,28 @@ html{
   width: 100%;
   height: auto;
 }
-
 .progress-title h3 {
   font-size: 18px;
   font-weight: 700;
-  color: #2f2f2f;
+  color: #f5f6fa;
   margin: 0 0 20px;
+}
+
+#demo span{
+  color: #f5f6fa;
 }
 
 .progress {
   height: 20px;
-  background: #e84118;
-  border-radius: 20px;
-  border: 1px solid #000;
-  box-shadow: 0 2px 2px #4f4c4c;
   margin-bottom: 40px;
   overflow: visible;
   position: relative;
+  border: none;
+  outline: none;
 }
 
 .progress .progress-bar {
-  border-radius: 20px;
-  /* border: 1px solid #000; */
+  border-radius: 10px;
   animation: animate-positive 2s;
 }
 
@@ -148,15 +159,14 @@ html{
   width: 65px;
   height: 25px;
   line-height: 25px;
-  background: #e84118;
+ background-color: #4f4c4c;
   font-size: 15px;
-  color: #fff;
+  color: #f5f6fa;
   border-radius: 0 0 15px 15px;
   border: 1px solid #fff;
   border-top: none;
   box-shadow: 0 2px 4px #4f4c4c;
   position: absolute;
-  /* bottom: 100px; */
   right: 50px;
 }
 
@@ -236,7 +246,7 @@ html{
   border: 5px solid rgba(0, 0, 0, 0.07);
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
-}
+ }
 
 .item:hover {
   background-color: #f91942;
@@ -332,12 +342,12 @@ html{
 .contact .content h2 {
   font-size: 36px;
   font-weight: 500;
-  color: #f91942;
+  color: #f5f6fa;
 }
 
 .contact .content p {
   font-weight: 300;
-  color: #f91942;
+  color: #f5f6fa;
 }
 
 .contain {
@@ -363,7 +373,8 @@ html{
 .contain .contactinfo .box .icon {
   min-width: 60px;
   height: 60px;
-  background-color: #f91942;
+ background-color: #4f4c4c;
+ color: #f5f6fa;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -375,20 +386,19 @@ html{
   display: flex;
   margin-left: 20px;
   font-size: 16px;
-  color: #f91942;
+  color: #f5f6fa;
   flex-direction: column;
   font-weight: 300;
 }
 
 .contain .contactinfo .box .text h3 {
   font-weight: 500;
-  color: #f91942;
+  color: #f5f6fa;
 }
 
 .contactform {
   width: 40%;
   padding: 40px;
-  /* background-color: #f91942; */
 }
 
 .contactform h2 {
@@ -403,6 +413,16 @@ html{
   margin-top: 10px;
 }
 
+.contactform input{
+  background-color: #4f4c4c;
+  border-radius: 3px;
+  color: #f5f6fa;
+}
+.contactform textarea{
+  background-color: #4f4c4c;
+  color: #f5f6fa;
+  border-radius: 3px;
+}
 .contactform .inputbox input,
 .contactform .inputbox textarea {
   width: 100%;
@@ -423,21 +443,21 @@ html{
   margin: 10px 0;
   pointer-events: none;
   transition: 0.5s;
-  color: #666;
+  color: #f5f6fa;
 }
 
 .contactform .inputbox input:focus~span,
 .contactform .inputbox input:valid~span,
 .contactform .inputbox textarea:focus~span,
 .contactform .inputbox textarea:valid~span {
-  color: #f91942;
+  color: #f5f6fa;
   font-size: 12px;
   transform: translateY(-20px);
 }
 
 .contactform .inputbox input[type="submit"] {
   width: 100px;
-  background-color: #e84118;
+  background-color: #4f4c4c;
   color: #fff;
   border: none;
   cursor: pointer;
