@@ -23,16 +23,17 @@ html{
   color: #4f4c4c;
 }
 
-
-.navbar-toggler-icon{
+.navbar .container .navbar-toggler{
   border: 0;
   outline: 0;
 }
-
-.navbar-toggler:focus{
-  box-shadow: 0;
-  outline: 0;
+.navbar .container .navbar-toggler:focus{
   border: 0;
+  outline: 0;
+  box-shadow: none;
+}
+.navbar-toggler i{
+  color: #f5f6fa;
 }
 
 /* ============navbarEnd=============== */
@@ -230,7 +231,7 @@ html{
 }
 
 .section-head p {
-  color: #818181;
+  color: #4f4c4c;
   font-size: 16px;
   line-height: 28px;
   text-align: center;
@@ -246,10 +247,15 @@ html{
   border: 5px solid rgba(0, 0, 0, 0.07);
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
+}
+.item p{
+  color: #4f4c4c !important;
+  font-size: 17px !important;
  }
 
 .item:hover {
-  background-color: #f91942;
+  background-color: #4f4c4c;
+  color: #f5f6fa;
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.02);
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
@@ -257,7 +263,7 @@ html{
 
 .item:hover .item,
 .item:hover span.icon {
-  background-color: #fff;
+  color: #f5f6fa !important;
   border-radius: 10px;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
@@ -265,7 +271,7 @@ html{
 
 .item:hover h6,
 .item:hover p {
-  color: #fff;
+  color: #fff !important;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
 }
@@ -280,6 +286,13 @@ html{
   border-radius: 50px;
 }
 
+.item i{
+  color: #4f4c4c !important;
+}
+.item i:hover{
+  color: #f5f6fa !important;
+
+}
 .item .feature_box_col_one {
   background-color: rgba(247, 198, 5, 0.02);
   color: #f91942;
@@ -310,11 +323,6 @@ html{
   color: #f91942;
 }
 
-.item p {
-  font-size: 15px;
-  line-height: 26px;
-}
-
 .item h6 {
   font-size: 25px;
   margin-bottom: 20px;
@@ -322,6 +330,29 @@ html{
 }
 
 /* ===========Endservices================= */
+.project-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.project-main .project{
+  width: 350px;
+  background-position: center;
+  background-size: cover;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+.project-main .project img{
+  width: 100%;
+  height: 45vh;
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+ border-radius: 5%;
+}
 /* ============Contactstart=========== */
 .contact {
   position: relative;
@@ -340,7 +371,7 @@ html{
 }
 
 .contact .content h2 {
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 500;
   color: #f5f6fa;
 }
@@ -348,6 +379,7 @@ html{
 .contact .content p {
   font-weight: 300;
   color: #f5f6fa;
+  font-size: 18px;
 }
 
 .contain {
@@ -379,13 +411,12 @@ html{
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .contain .contactinfo .box .text {
   display: flex;
   margin-left: 20px;
-  font-size: 16px;
   color: #f5f6fa;
   flex-direction: column;
   font-weight: 300;
@@ -394,7 +425,12 @@ html{
 .contain .contactinfo .box .text h3 {
   font-weight: 500;
   color: #f5f6fa;
+  font-size: 20px;
 }
+.contain .contactinfo .box .text p{
+  font-size: 14px !important
+}
+
 
 .contactform {
   width: 40%;
@@ -402,7 +438,7 @@ html{
 }
 
 .contactform h2 {
-  font-size: 30px;
+  font-size: 20px;
   color: #f91942;
   font-weight: 500;
 }
@@ -435,12 +471,19 @@ html{
   resize: none;
 }
 
+input{
+  padding-left: 20px !important;
+}
+textarea{
+  padding-left: 20px !important;
+}
+
 .contactform .inputbox span {
   position: absolute;
   left: 0;
   padding: 5px 0;
   font-size: 16px;
-  margin: 10px 0;
+  /* margin: 10px 0; */
   pointer-events: none;
   transition: 0.5s;
   color: #f5f6fa;
