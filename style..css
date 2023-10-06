@@ -6,22 +6,24 @@ html{
   position: fixed;
   width: 100%;
   z-index: 10000;
-  color: #fff;
-  box-shadow: 0px 15px 10px -15px #111; 
+  color: #000;
  }
 .nav-item a {
   transition-property: background-color;
   transition: 1s;
-  font-weight: 700;
-  font-size: 20px;
-  color: #f5f6fa;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+  text-transform: capitalize;
+  box-shadow: 0 0 3px #000;
+  margin-left: 18px;
 }
-.nav-link:hover,
-.nav-link.active {
-  background-color: #f5f6fa;
-  border-radius: 20px;
-  color: #4f4c4c;
+.nav-item a:hover{
+ border: none;
+ outline: none;
+ box-shadow: none;
 }
+
 
 .navbar .container .navbar-toggler{
   border: 0;
@@ -33,7 +35,7 @@ html{
   box-shadow: none;
 }
 .navbar-toggler i{
-  color: #f5f6fa;
+  color: #000;
 }
 
 /* ============navbarEnd=============== */
@@ -45,7 +47,7 @@ html{
   background-attachment: fixed;
   height: 100vh;
   width: 100%;
-  background-image: url('https://images.unsplash.com/photo-1616004655123-818cbd4b3143?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29kaW5nJTIwd2FsbHBhcGVyfGVufDB8fDB8fHww&w=1000&q=80');
+  /* background-image: url('https://images.unsplash.com/photo-1616004655123-818cbd4b3143?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29kaW5nJTIwd2FsbHBhcGVyfGVufDB8fDB8fHww&w=1000&q=80'); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -55,39 +57,40 @@ html{
 }
 
 .text h1 {
-  color: #f5f6fa;
+  color: #000;
 }
 
 .text h2 {
-  color: #f5f6fa;
+  color: #000;
 }
 
 .text button {
-  font-weight: bold;
+  font-weight: 600;
   padding: 10px;
-  border-radius: 12px;
   transition-property: background-color;
   transition-property: color;
-  transition: 2s;
+  transition: 1s;
   border: 0;
   outline: 0;
   color: #2f3640;
+  box-shadow: 0 0 3px #000;
 }
 
-.text button:hover {
-  color: #f5f6fa;
-  background-color: #2f2f2f;
-}
+.text button:hover{
+  border: none;
+  outline: none;
+  box-shadow: none;
+ }
 
 /* ============HomeEnd=============== */
 .color{
-  background-color: #2f3640;
+  background-color: #ffffff;
 }
 /* =======About============ */
 #demo p {
   font-weight: 500;
   font-size: 20px;
-  color: #f5f6fa;
+  color: #000;
   letter-spacing: 2px;
 }
 
@@ -104,7 +107,7 @@ html{
 
 .images i{
   cursor: pointer;
-  color: #f5f6fa;
+  color: #000;
 }
 
 .imag {
@@ -112,20 +115,22 @@ html{
 }
 
 #demo button {
-  font-weight: 900;
-  border-radius: 12px;
+  font-weight: 600;
   padding: 8px;
   transition-property: background-color;
   transition-property: color;
-  transition: 2s;
+  transition: 1s;
   border: 0;
   outline: 0;
+  box-shadow: 0 0 3px #000;
 }
 
-#demo button:hover {
-  background-color: #2f2f2f;
-  color: white;
+#demo button:hover{
+  box-shadow: none;
+  border: none;
+  outline: none;
 }
+
 
 .progress-title {
   width: 100%;
@@ -134,12 +139,12 @@ html{
 .progress-title h3 {
   font-size: 18px;
   font-weight: 700;
-  color: #f5f6fa;
+  color: #000;
   margin: 0 0 20px;
 }
 
 #demo span{
-  color: #f5f6fa;
+  color: #000;
 }
 
 .progress {
@@ -157,16 +162,12 @@ html{
 }
 
 .progress .progress-value {
-  width: 65px;
-  height: 25px;
-  line-height: 25px;
- background-color: #4f4c4c;
+  width: 60px;
+  height: 20px;
   font-size: 15px;
-  color: #f5f6fa;
+  color: #000;
   border-radius: 0 0 15px 15px;
-  border: 1px solid #fff;
   border-top: none;
-  box-shadow: 0 2px 4px #4f4c4c;
   position: absolute;
   right: 50px;
 }
@@ -186,12 +187,6 @@ html{
 /* ===========EndAbout================ */
 .card-card img{
   cursor: pointer;
-}
-
-.card-card img:hover{
-  filter: blur(1px);
-  filter: brightness(1.1);
-  filter: contrast(1.5);
 }
 
 /* ============service=============== */
@@ -238,10 +233,9 @@ html{
 }
 
 .item {
-  background-color: #fff;
+  background-color: #ffffff;
   text-align: center;
   padding: 30px 25px;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.07);
   border-radius: 20px;
   margin-bottom: 30px;
   border: 5px solid rgba(0, 0, 0, 0.07);
@@ -254,16 +248,16 @@ html{
  }
 
 .item:hover {
-  background-color: #4f4c4c;
-  color: #f5f6fa;
-  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.02);
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #ffffff;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
 }
 
+
 .item:hover .item,
 .item:hover span.icon {
-  color: #f5f6fa !important;
+  color: #000 !important;
   border-radius: 10px;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
@@ -271,7 +265,7 @@ html{
 
 .item:hover h6,
 .item:hover p {
-  color: #fff !important;
+  color: #000 !important;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
 }
@@ -290,7 +284,7 @@ html{
   color: #4f4c4c !important;
 }
 .item i:hover{
-  color: #f5f6fa !important;
+  color: #000 !important;
 
 }
 .item .feature_box_col_one {
@@ -353,6 +347,8 @@ html{
  background-repeat: no-repeat;
  border-radius: 5%;
 }
+
+
 /* ============Contactstart=========== */
 .contact {
   position: relative;
@@ -373,12 +369,12 @@ html{
 .contact .content h2 {
   font-size: 30px;
   font-weight: 500;
-  color: #f5f6fa;
+  color: #000;
 }
 
 .contact .content p {
   font-weight: 300;
-  color: #f5f6fa;
+  color: #000;
   font-size: 18px;
 }
 
@@ -405,11 +401,12 @@ html{
 .contain .contactinfo .box .icon {
   min-width: 60px;
   height: 60px;
- background-color: #4f4c4c;
- color: #f5f6fa;
+ background-color: #ffffff;
+ color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 0 6px #000;
   border-radius: 50%;
   font-size: 20px;
 }
@@ -417,14 +414,14 @@ html{
 .contain .contactinfo .box .text {
   display: flex;
   margin-left: 20px;
-  color: #f5f6fa;
+  color: #000;
   flex-direction: column;
   font-weight: 300;
 }
 
 .contain .contactinfo .box .text h3 {
   font-weight: 500;
-  color: #f5f6fa;
+  color: #000;
   font-size: 20px;
 }
 .contain .contactinfo .box .text p{
@@ -450,13 +447,11 @@ html{
 }
 
 .contactform input{
-  background-color: #4f4c4c;
   border-radius: 3px;
-  color: #f5f6fa;
+  color: #000;
 }
 .contactform textarea{
-  background-color: #4f4c4c;
-  color: #f5f6fa;
+  color: #000;
   border-radius: 3px;
 }
 .contactform .inputbox input,
@@ -486,22 +481,23 @@ textarea{
   /* margin: 10px 0; */
   pointer-events: none;
   transition: 0.5s;
-  color: #f5f6fa;
+  color: #000;
 }
 
 .contactform .inputbox input:focus~span,
 .contactform .inputbox input:valid~span,
 .contactform .inputbox textarea:focus~span,
 .contactform .inputbox textarea:valid~span {
-  color: #f5f6fa;
+  color: #000;
   font-size: 12px;
   transform: translateY(-20px);
 }
 
 .contactform .inputbox input[type="submit"] {
   width: 100px;
-  background-color: #4f4c4c;
-  color: #fff;
+  background-color: #ffffff;
+  box-shadow: 0 0 3px #000;
+  color: #000;
   border: none;
   cursor: pointer;
   padding: 10px;
