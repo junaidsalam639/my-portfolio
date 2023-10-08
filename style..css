@@ -234,6 +234,11 @@ section:nth-child(odd){
   border-radius: 50px;
 }
 
+.item p{
+  font-size: 16px !important;
+  font-weight: 500 !important;
+}
+
 .item:hover{
    background-color: #fff;
    color: black;
@@ -242,7 +247,7 @@ section:nth-child(odd){
    color: black;
 }
 .item:hover p{
-   color: black;
+   color: black !important
 }
 .item:hover .icon{
    color: black;
