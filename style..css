@@ -13,13 +13,16 @@ html{
   font-weight: 500;
   font-size: 16px;
   text-transform: capitalize;
-  border: 1px solid black;
+  border: 1px solid #fff;
+  color: #fff;
   margin-left: 18px;
   transition: 1s;
   border-radius: 4px;
 }
-
-
+.nav-item a:hover{
+  background-color: #fff;
+  color: black;
+}
 
 .navbar .container .navbar-toggler{
   border: 0;
@@ -36,6 +39,9 @@ html{
 
 
 /* ============navbarEnd=============== */
+.color{
+  background-color: black;
+}
 /* =========Home============= */
 
 section{
@@ -54,13 +60,21 @@ section{
   background-color: black;
 }
 #particles-js button{
-   font-size: 20px;
-   font-weight: 600;
+   font-size: 16px;
+   font-weight: 500;
    width: 100px;
    padding: 10px;
    border: none;
    outline: none;
    border-radius: 4px;
+   border: 1px solid #fff;
+   color: #fff;
+   background-color: black;
+   transition: 1s;
+}
+#particles-js button:hover{
+  background-color: #fff;
+  color: black;
 }
 section:nth-child(odd){
   color:white;
@@ -89,8 +103,13 @@ section:nth-child(odd){
   font-weight: 500;
   font-size: 20px;
   letter-spacing: 2px;
+  color: #fff;
 }
-
+#demo h1{
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
 .images {
   font-size: 35px;
   display: flex;
@@ -104,7 +123,7 @@ section:nth-child(odd){
 
 .images i{
   cursor: pointer;
-  color: #000;
+  color: #fff;
 }
 
 .imag {
@@ -119,12 +138,16 @@ section:nth-child(odd){
   transition: 1s;
   border: 0;
   outline: 0;
-  /* box-shadow: 0 0 2px #000; */
-  border: 1px solid black;
+  border: 1px solid #fff;
   border-radius: 4px;
+  background-color: black;
+  color: #fff;
 }
 
-
+#demo button:hover{
+  background-color: #fff;
+  color: black;
+}
 
 .progress-title {
   width: 100%;
@@ -132,8 +155,9 @@ section:nth-child(odd){
 }
 .progress-title h3 {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 800;
   margin: 0 0 20px;
+  color: #fff;
 }
 
 
@@ -147,7 +171,7 @@ section:nth-child(odd){
 }
 
 .progress .progress-bar {
-  border-radius: 10px;
+  border-radius: 8px;
   animation: animate-positive 2s;
 }
 
@@ -155,11 +179,13 @@ section:nth-child(odd){
   width: 60px;
   height: 20px;
   font-size: 15px;
-  color: #000;
+  color: black;
   border-radius: 0 0 15px 15px;
   border-top: none;
   position: absolute;
   right: 50px;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 @-webkit-keyframes animate-positive {
@@ -513,11 +539,11 @@ textarea{
 
 /* ============Endcontact============= */
 /* ======About Contact  ka h1 style============= */
-.section {
+/* .section {
   margin-bottom: 30px;
-}
+} */
 
-.section h1 {
+/* .section h1 {
   position: relative;
   padding: 0;
   color: #f91942;
@@ -546,7 +572,7 @@ textarea{
   font-weight: 700;
   padding-bottom: 5px;
   color: #2f2f2f;
-}
+} */
 
 
 
