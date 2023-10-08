@@ -34,7 +34,7 @@ html{
   box-shadow: none;
 }
 .navbar-toggler i{
-  color: #000;
+  color: #fff;
 }
 
 
@@ -55,6 +55,8 @@ section{
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
   }
 #particles-js{
   background-color: black;
@@ -204,6 +206,30 @@ section:nth-child(odd){
 .card-card img{
   cursor: pointer;
 }
+.project-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.project-main .project{
+  width: 350px;
+  background-position: center;
+  background-size: cover;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+.project-main .project img{
+  width: 100%;
+  height: 45vh;
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+ border-radius: 5%;
+}
+
 
 /* ============service=============== */
 
@@ -254,29 +280,6 @@ section:nth-child(odd){
 }
 
 /* ===========Endservices================= */
-.project-main {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  flex-wrap: wrap;
-}
-.project-main .project{
-  width: 350px;
-  background-position: center;
-  background-size: cover;
-  margin-top: 3%;
-  margin-bottom: 3%;
-}
-.project-main .project img{
-  width: 100%;
-  height: 45vh;
- background-position: center;
- background-size: cover;
- background-repeat: no-repeat;
- border-radius: 5%;
-}
 
 
 /* ============Contactstart=========== */
@@ -288,7 +291,7 @@ section:nth-child(odd){
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* background-color: #c23616; */
+  flex-wrap: wrap;
 }
 
 .contact .content {
@@ -348,7 +351,7 @@ section:nth-child(odd){
 
 .contain .contactinfo .box .text h3 {
   font-weight: 500;
-  color: #000;
+  color: #fff;
   font-size: 20px;
 }
 .contain .contactinfo .box .text p{
@@ -376,19 +379,20 @@ section:nth-child(odd){
 .contactform input{
   border-radius: 3px;
   color: #000;
+  background-color: black;
 }
 .contactform textarea{
   color: #000;
   border-radius: 3px;
+  background-color: black;
 }
 .contactform .inputbox input,
 .contactform .inputbox textarea {
   width: 100%;
-  padding: 5px 0;
   font-size: 16px;
   margin: 10px 0;
   border: none;
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid #fff;
   outline: none;
   resize: none;
 }
@@ -403,33 +407,42 @@ textarea{
 .contactform .inputbox span {
   position: absolute;
   left: 0;
-  padding: 5px 0;
+  padding-top: 12px;
+  padding-left: 12px;
   font-size: 16px;
-  /* margin: 10px 0; */
   pointer-events: none;
   transition: 0.5s;
-  color: #000;
+  color: #fff;
 }
 
 .contactform .inputbox input:focus~span,
 .contactform .inputbox input:valid~span,
 .contactform .inputbox textarea:focus~span,
 .contactform .inputbox textarea:valid~span {
-  color: #000;
+  color: #fff;
   font-size: 12px;
   transform: translateY(-20px);
 }
 
 .contactform .inputbox input[type="submit"] {
-  width: 100px;
-  background-color: #ffffff;
+  font-weight: 600;
+  padding: 10px;
+  transition-property: background-color;
+  transition-property: color;
+  transition: 1s;
+  border: 0;
+  outline: 0;
+  color: #fff;
   border: 1px solid black;
-  color: #000;
-  cursor: pointer;
-  font-size: 16px;
-  width: 80px;
-  padding-right: 18px;
-  text-align: center;
+  border-radius: 4px;
+  width: 100px;
+  background-color: black;
+  border: 1px solid #fff;
+}
+
+.contactform .inputbox input[type="submit"]:hover{
+  background-color: #fff;
+  color: black;
 }
 
 @media (max-width: 991px) {
@@ -453,40 +466,7 @@ textarea{
 
 /* ============Endcontact============= */
 /* ======About Contact  ka h1 style============= */
-/* .section {
-  margin-bottom: 30px;
-} */
 
-/* .section h1 {
-  position: relative;
-  padding: 0;
-  color: #f91942;
-  line-height: 1;
-  letter-spacing: 0.3px;
-  font-size: 34px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: none;
-  margin-bottom: 30px;
-}
-
-.section h1::before {
-  content: '';
-  width: 60px;
-  height: 3px;
-  background-color: #f91942;
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-}
-
-.section h1 span {
-  font-weight: 700;
-  padding-bottom: 5px;
-  color: #2f2f2f;
-} */
 
 
 
