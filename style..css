@@ -470,12 +470,13 @@ textarea{
 .contactform .inputbox input[type="submit"] {
   width: 100px;
   background-color: #ffffff;
-  /* box-shadow: 0 0 1px #000; */
   border: 1px solid black;
   color: #000;
   cursor: pointer;
-  padding: 10px;
-  font-size: 18px;
+  font-size: 16px;
+  width: 80px;
+  padding-right: 18px;
+  text-align: center;
 }
 
 @media (max-width: 991px) {
