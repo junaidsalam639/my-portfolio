@@ -399,9 +399,11 @@ section:nth-child(odd){
 
 input{
   padding-left: 20px !important;
+  color: #fff !important;
 }
 textarea{
   padding-left: 20px !important;
+  color: #fff !important;
 }
 
 .contactform .inputbox span {

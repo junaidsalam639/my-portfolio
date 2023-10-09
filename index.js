@@ -112,7 +112,6 @@
 
 
       // cv code start
-      
           document.getElementById('downloadButton').addEventListener('click', function() {
             fetch('./Images/Black Modern Professional Resume.pdf')
               .then(response => response.blob())
