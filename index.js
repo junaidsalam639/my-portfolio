@@ -109,3 +109,24 @@
         "retina_detect": true
       });
       
+
+
+      // cv code start
+      
+          document.getElementById('downloadButton').addEventListener('click', function() {
+            fetch('./Images/Black Modern Professional Resume.pdf')
+              .then(response => response.blob())
+              .then(blob => {
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                // Set the desired filename for the downloaded PDF
+                a.download = 'your_cv.pdf';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                window.URL.revokeObjectURL(url);
+              })
+              .catch(error => console.error('Error:', error));
+          });  
+      // cv code end
