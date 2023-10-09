@@ -18,6 +18,7 @@ html{
   margin-left: 18px;
   transition: 1s;
   border-radius: 50px;
+  margin-top: 12px;
 }
 .nav-item a:hover{
   background-color: #fff;
