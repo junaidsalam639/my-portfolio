@@ -129,3 +129,11 @@
               .catch(error => console.error('Error:', error));
           });  
       // cv code end
+
+
+
+
+
+      // footer code start
+      
+      // footer code end
